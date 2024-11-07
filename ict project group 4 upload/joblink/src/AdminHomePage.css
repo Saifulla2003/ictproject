@@ -1,0 +1,157 @@
+/* General styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica', sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+}
+
+/* Container for the whole page */
+.admin-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('build2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Navbar styling */
+.navbar {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 3.2rem;
+  font-weight: 900;
+  flex: 1;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  letter-spacing: 0.05em;
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex: 2;
+}
+
+/* Button styles */
+.btn {
+  padding: 0.7rem 1.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.manage-jobs {
+  background-color: #ffffff;
+  color: #007bff;
+  border: 2px solid #ffffff;
+}
+
+.manage-jobs:hover {
+  background-color: #e0ebff;
+}
+
+.logout {
+  background-color: #ffffff;
+  color: #ff4d4d;
+  border: 2px solid #ffffff;
+}
+
+.logout:hover {
+  background-color: #ffe0e0;
+}
+
+/* Content section */
+.content {
+  margin-top: 8rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.content p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .nav-buttons {
+    gap: 1rem;
+  }
+
+  .content h1 {
+    font-size: 2rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+}
+
+/* Add New Job Button Styling */
+.add-new-job-btn {
+  position: absolute; /* Change to fixed if you want it to be always in view */
+  top: 60%; /* Adjust vertical position */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #007bff; /* Blue color */
+  color: #ffffff; /* White text color */
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.5rem; /* Larger font size */
+  font-weight: bold;
+  border-radius: 30px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Initial shadow */
+}
+
+/* Add New Job Button Hover Effect */
+.add-new-job-btn:hover {
+  background-color: #0069d9; /* Darker blue on hover */
+  transform: translate(-50%, -50%) scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Add New Job Button Focus Effect */
+.add-new-job-btn:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); /* Outline effect when focused */
+}

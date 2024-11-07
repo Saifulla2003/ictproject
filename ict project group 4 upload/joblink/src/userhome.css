@@ -1,0 +1,152 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Helvetica', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    background-image: url('backuser.jpg'); /* Add your image here */
+    background-size: cover; /* Ensure the image covers the entire screen */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+  
+  /* Container for the user home page */
+  .user-home-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Navbar styling */
+  .navbar {
+    width: 100%; /* Full width of the page */
+    background-color: #060d13; /* Blue background */
+    color: white; /* White text */
+    display: flex;
+    justify-content: space-between; /* Space between logo and buttons */
+    align-items: center;
+    padding: 1rem 2rem;
+    position: fixed; /* Fixed position */
+    top: 0; /* Stick to the top of the page */
+    left: 0; /* Stick to the left */
+    right: 0; /* Stick to the right */
+    z-index: 100; /* On top of other content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  }
+  
+  /* Navbar hover effect */
+  .navbar:hover {
+    background-color: #032d5a; /* Darker blue on hover */
+  }
+  
+  .logo {
+    font-size: 2.5rem; /* Larger logo font */
+    font-weight: bold; /* Bold font */
+    letter-spacing: 0.05em; /* Slightly spaced letters */
+  }
+  
+  /* Navbar buttons container */
+  .nav-buttons {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 1.5rem; /* Space between buttons */
+  }
+  
+  /* Navigation link styles */
+  .nav-link {
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    padding: 0.5rem 1rem; /* Padding around links */
+    border-radius: 20px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  }
+  
+  .nav-link:hover {
+    background-color: rgba(17, 4, 4, 0.4); /* Light background on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+  }
+  
+  /* Content section */
+  .content {
+    margin-top: 6rem; /* Space below navbar */
+    text-align: center; /* Center the text */
+    padding: 2rem; /* Padding for content area */
+  }
+  
+ 
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column; /* Stack navbar items on smaller screens */
+      padding: 1rem; /* Less padding */
+    }
+  
+    .nav-buttons {
+      flex-direction: column; /* Stack buttons vertically */
+      gap: 1rem; /* Space between buttons */
+    }
+  
+    .content h1 {
+      font-size: 2rem; /* Smaller heading */
+    }
+  
+    .content p {
+      font-size: 1rem; /* Smaller paragraph */
+    }
+  }
+  /* Content section */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100vh; /* Full height of the viewport */
+    text-align: center; /* Center the text */
+    padding: 2rem;
+  }
+  
+  .content h1 {
+    font-size: 3rem; /* Larger font size for heading */
+    color: #010913; /* Blue color for heading */
+    font-family: 'Poppins', sans-serif; /* Attractive modern font */
+    font-weight: bold; /* Bold font for emphasis */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for a modern look */
+    margin-bottom: 1rem; /* Space below the heading */
+  }
+  
+  .content p {
+    font-size: 1.5rem; /* Increase the paragraph font size */
+    color: #160836; /* Medium dark gray for the paragraph */
+    font-family: 'Roboto', sans-serif; /* Clean modern font */
+    line-height: 1.5; /* Add spacing for better readability */
+    max-width: 600px; /* Set a maximum width for better formatting */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Soft shadow for paragraph text */
+  }
+  .profile-icon {
+    width: 40px; /* Adjust size as needed */
+    height: 40px;
+    border-radius: 50%; /* Optional: make it circular */
+    object-fit: cover; /* Ensure the image fits well */
+  }
+  .outlined-link {
+    color: blue; /* Set the text color to blue */
+    border: 2px solid blue; /* Add a blue outline */
+    padding: 0.5rem 1rem; /* Padding around the button */
+    border-radius: 20px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+  }
+  
+  .outlined-link:hover {
+    background-color: blue; /* Blue background on hover */
+    color: white; /* White text on hover */
+  }
+  

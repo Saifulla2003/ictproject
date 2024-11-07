@@ -1,0 +1,63 @@
+
+.job-management-container {
+    padding: 2rem;
+    color: #000000;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.job-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.job-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 300px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.job-card h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.5rem;
+}
+
+.job-card p {
+    margin: 0.25rem 0;
+}
+
+.edit-button,
+.delete-button,
+.submit-button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-button {
+    background-color: #007bff;
+    color: white;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.submit-button {
+    background-color: #28a745;
+    color: white;
+}
+
+.edit-form-container {
+    margin-top: 2rem;
+    background-color: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+}

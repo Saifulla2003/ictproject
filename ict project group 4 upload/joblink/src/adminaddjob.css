@@ -1,0 +1,68 @@
+.add-job-form-container {
+  background-color: rgb(203, 136, 136); /* White background for the form */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Deeper shadow for depth */
+  padding: 2rem; /* Padding around the form */
+  max-width: 2000px; /* Increased maximum width */
+  margin: 2rem auto; /* Center the form with margin */
+}
+
+
+.add-job-form-container h2 {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.form-field {
+  margin-bottom: 1.5rem; /* Increased space between fields */
+}
+
+.input-field {
+  width: 100%;
+  padding: 15px; /* Increased padding for larger input fields */
+  border: 2px solid #ddd;
+  border-radius: 8px; /* Rounded corners */
+  font-size: 1.1rem; /* Larger font size */
+  transition: border-color 0.3s ease;
+}
+.select-field {
+  width: 100%;
+  padding: 15px; /* Increased padding for larger input fields */
+  border: 2px solid #ddd;
+  border-radius: 8px; /* Rounded corners */
+  font-size: 1.1rem; /* Larger font size */
+  transition: border-color 0.3s ease;
+}
+
+.input-field::placeholder {
+  color: #190f0f;
+}
+
+.input-field:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px; /* Increased padding */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 100%;
+}
+
+.submit-button:hover {
+  background-color: #0069d9;
+  transform: translateY(-2px);
+}
+
+.submit-button:active {
+  transform: translateY(0);
+}

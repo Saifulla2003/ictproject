@@ -1,0 +1,23 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+
+}
+
+#aaa{
+  align-items: center;
+}
+#abc{
+  align-items: center;
+}
+#TYP{
+  color: aqua;
+}
+/* #main{ */
+ 
+  /* background-image:url('back.jpg') ;
+  height:100%
+  background-size:cover; */
+/* } */

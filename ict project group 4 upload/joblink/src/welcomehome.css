@@ -1,0 +1,98 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('build3.jpg');
+    /* background:  */
+      /* linear-gradient(135deg, rgba(111, 134, 214, 0.8), rgba(72, 198, 239, 0.8)), 
+      url('back4.jpg');  */
+    background-size: cover; /* Ensure the background image covers the entire screen */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repeat */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Welcome container styling */
+.welcome-container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+/* Updated Welcome Title Styling */
+.welcome-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #333;
+    letter-spacing: 1.8px;
+    background: linear-gradient(90deg, #0a1017, #281468); /* Modern gradient text */
+    -webkit-background-clip: text; /* Apply gradient to the text */
+    color: transparent;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Attractive shadow effect */
+}
+
+/* Button Group */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.welcome-btn {
+    font-size: 1.1rem;
+    padding: 12px 30px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+/* Login button */
+.login-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+    box-shadow: 0 8px 15px rgba(0, 123, 255, 0.4);
+}
+
+/* Signup button */
+.signup-btn {
+    border-color: #007bff;
+    color: #007bff;
+}
+
+.signup-btn:hover {
+    background-color: #007bff;
+    color: white;
+    box-shadow: 0 8px 15px rgba(0, 123, 255, 0.4);
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+    .welcome-container {
+        padding: 30px;
+    }
+
+    .welcome-title {
+        font-size: 2.5rem; /* Adjust for smaller screens */
+    }
+
+    .welcome-btn {
+        padding: 10px 25px;
+    }
+}
